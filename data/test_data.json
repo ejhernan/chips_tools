@@ -1,0 +1,19 @@
+{
+  "game" : ["Game 1", "Game 2", "Game 3"],
+  "platform" : [
+    {
+      "launch year":1989,
+      "name": "Atari Lynx"
+    },
+    {
+      "launch year" : 2003,
+      "name" : "Steam"
+    },
+	{
+      "launch year" : 1985,
+      "name" : "MSX2"
+    }
+  ],
+  "title" : ["Chip's Challenge", "Chip's Challenge 2", "Metal Gear"],
+  "year" : [1989, 2015, 1987]
+}
