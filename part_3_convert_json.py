@@ -35,17 +35,19 @@ def make_levels(files):
         new_level.add_field(monster_field)
         password = level["passwords"]
         password_field = cc_classes.CCEncodedPasswordField(password)
+        hint = cc_classes.CCMapHintField("Collect all the coins!")
+        new_level.add_field(hint)
         new_level.add_field(password_field)
         level_pack.add_level(new_level)
     return level_pack
 
 
 
-game_file = "data/test_game_data.json"
+game_file = "data/ejhernan_cc1.json"
 
 with open(game_file, "r") as reader:
 
     game_json_data = json.load(reader)
 
 game_pack = make_levels(game_file)
-cc_dat_utils.write_cc_level_pack_to_dat(game_pack, "C:/Users/ehern/Downloads/python/tworld-1.3.2-win32/sets/ejhernan.dat")
+cc_dat_utils.write_cc_level_pack_to_dat(game_pack, "C:/Users/ehern/Downloads/python/tworld-1.3.2-win32/sets/ejhernan_cc1.dat")
